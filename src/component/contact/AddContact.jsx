@@ -17,48 +17,49 @@ class AddContact extends Component {
 
         return (
             <div className="card mb-3">
-                <div className="card-header">
-                    <form>
-                        <div className="form-group">
-                            <label htmlFor="name">Name</label>
+                <div className="card-header">Add Contact</div>
+                <div className="card-body">
+                        <form>
+                            <div className="form-group">
+                                <label htmlFor="name">Name</label>
+                                <input 
+                                type="text"
+                                name="name"
+                                placeholder="Enter name..."
+                                className="form-control form-control-lg"
+                                value={name}
+                                onChange={this.onChange}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email</label>
+                                <input 
+                                type="email"
+                                name="email"
+                                placeholder="Enter email..."
+                                className="form-control form-control-lg"
+                                value={email}
+                                onChange={this.onChange}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="phone">Phone</label>
+                                <input 
+                                type="text"
+                                name="phone"
+                                placeholder="Enter phone..."
+                                className="form-control form-control-lg"
+                                value={phone}
+                                onChange={this.onChange}
+                                />
+                            </div>
                             <input 
-                            type="text"
-                            name="name"
-                            placeholder="Enter name..."
-                            className="form-control form-control-sm"
-                            value={name}
-                            onChange={this.onChange}
+                            type="submit"
+                            value="Add Contact"
+                            className="btn btn-dark btn-block"
                             />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">email</label>
-                            <input 
-                            type="text"
-                            name="email"
-                            placeholder="Enter email..."
-                            className="form-control form-control-sm"
-                            value={email}
-                            onChange={this.onChange}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="phone">phone</label>
-                            <input 
-                            type="text"
-                            name="phnoe"
-                            placeholder="Enter phone..."
-                            className="form-control form-control-sm"
-                            value={phone}
-                            onChange={this.onChange}
-                            />
-                        </div>
-                        <input 
-                        type="submit"
-                        value="Add Contact"
-                        className="btn btn-block"
-                        />
-                    </form>
-                </div>
+                        </form>
+                    </div>
             </div>
         )
     }
