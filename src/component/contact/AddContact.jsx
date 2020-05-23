@@ -30,13 +30,12 @@ class AddContact extends Component {
       return;
     }
 
+    // id: uuidv4(), (for generating IDs staticaly instead of letting backend api do it)
+    /* 
+      if properties of the object is the same with
+      what the property is going to be assigned to.
+    */
     const newContact = {
-      // id: uuidv4(), (for generating IDs staticaly instead of letting backend api do it)
-      /* 
-            if properties of the object is the same with
-            what the property is going to be assigned to.
-            */
-
       name, // = name;
       email, // = email;
       phone, // = phone;
