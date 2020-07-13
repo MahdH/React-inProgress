@@ -16,7 +16,7 @@ function App() {
     <Provider>
       <Router>
         <div className="App">
-          <Header FormName="Contact Form" />
+          <Header FormName="Contact Form"/>
           <div className="container">
             <Switch>
               <Route exact path="/" component={Contacts}></Route>
